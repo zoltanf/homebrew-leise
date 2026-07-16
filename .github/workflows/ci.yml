@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  audit:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v6
+      - name: Update Homebrew
+        run: brew update
+      - name: Check style
+        run: brew style Casks/leise.rb
+      - name: Audit cask
+        run: brew audit --cask --strict Casks/leise.rb
