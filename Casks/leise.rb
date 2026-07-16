@@ -1,8 +1,8 @@
 cask "leise" do
   version "1.7.1"
-  sha256 "299db9aa858143cfea02fb64b6482507624ff9bc38b8ab043b175e36b362569e"
+  sha256 "359204d96a33276f46791ca67a2683490b196522d30a027593a0739616a388f0"
 
-  url "https://github.com/zoltanf/Leise/releases/download/v#{version}/Leise-#{version}-macOS-arm64.dmg"
+  url "https://github.com/zoltanf/Leise/releases/download/v#{version}/Leise-#{version}-Offline-macOS-arm64.dmg"
   name "Leise"
   desc "Private, local-first speech-to-text app"
   homepage "https://github.com/zoltanf/Leise"

@@ -9,8 +9,8 @@ a private, local-first speech-to-text app for macOS.
 brew install --cask zoltanf/leise/leise
 ```
 
-The cask installs the smaller on-demand edition. Speech models are downloaded by
-Leise when selected.
+The cask installs the fully offline edition, including Parakeet v2, Parakeet v3,
+and vocabulary boosting. No model download is required after installation.
 
 Leise currently requires Apple Silicon and macOS 14 Sonoma or newer.
 
@@ -44,4 +44,4 @@ Remove the app and its local user data:
 brew uninstall --zap --cask leise
 ```
 
-The cask is checked daily against the latest public Leise GitHub release.
+Each Leise release updates this cask from the published offline DMG's GitHub SHA-256 digest.
