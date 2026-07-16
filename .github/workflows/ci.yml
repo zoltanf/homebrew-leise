@@ -14,4 +14,6 @@ jobs:
       - name: Check style
         run: brew style Casks/leise.rb
       - name: Audit cask
-        run: brew audit --cask --strict Casks/leise.rb
+        run: |
+          brew tap zoltanf/leise
+          brew audit --cask --strict zoltanf/leise/leise
