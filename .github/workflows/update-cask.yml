@@ -20,7 +20,7 @@ jobs:
           release="$(gh api repos/zoltanf/Leise/releases/latest)"
           tag="$(jq -r '.tag_name' <<<"$release")"
           version="${tag#v}"
-          asset_name="Leise-${version}-macOS-arm64.dmg"
+          asset_name="Leise-${version}-Offline-macOS-arm64.dmg"
           digest="$(jq -r --arg name "$asset_name" '.assets[] | select(.name == $name) | .digest' <<<"$release")"
           sha256="${digest#sha256:}"
 
