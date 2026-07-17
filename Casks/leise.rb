@@ -1,6 +1,6 @@
 cask "leise" do
-  version "1.7.2"
-  sha256 "bff87528051be1c63ce474641d27f8e077bcd1eae6b6f7fb713e6c54303b6e2a"
+  version "1.7.3"
+  sha256 "6c66d07486b42ed7684da35cf1b6665a16b79d8baa4282f72923dff38653bfff"
 
   url "https://github.com/zoltanf/Leise/releases/download/v#{version}/Leise-#{version}-Offline-macOS-arm64.dmg"
   name "Leise"
